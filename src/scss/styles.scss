@@ -1,0 +1,358 @@
+/** Start of import styles **/
+@import "global";
+@import "variables";
+@import "mixins";
+@import "common";
+/** End of import styles **/
+
+/** Start of body ***/
+
+body {
+    padding-top: 60px;
+    background-color: $dark;
+}
+/** End of body ***/
+
+/** Start of header ***/
+header {
+    padding: 1rem 4rem;
+    @include flexbox(space-between, false, false);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+
+    /** Start of logo **/
+    .logo {
+        font-weight: bold;
+        color: $dark;
+        font-size: 1.3rem;
+
+        @media screen and (max-width: $mobile-width) {
+            font-size: 1.8rem;
+        }
+    }
+    /** End of logo **/
+
+    /** Start of nav ***/
+    nav {
+        @include flexbox(false, false, false);
+        /** Start of ul ***/
+        ul {
+            @include flexbox(end, false, 50px);
+        }
+        /** Start of a ***/
+        a {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 0.7rem;
+            color: $dark;
+        }
+        /** End of a ***/
+
+        /** End of ul ***/
+
+        @media screen and (max-width: $mobile-width) {
+            display: none;
+        }
+    }
+    /** End of nav ***/
+
+    @media screen and (max-width: $mobile-width) {
+        @include flexbox(center, false, false);
+    }
+}
+/** End of header ***/
+
+/** Start of video  **/
+.video {
+    width: 55vw;
+    margin: 2rem auto 5rem;
+    border-radius: 1rem;
+
+    /** Start of iframe  **/
+    iframe {
+        width: 100%;
+        border-radius: 1rem;
+        height: 475px;
+
+        @media screen and (max-width: $mobile-width) {
+            height: 220px;
+        }
+    }
+    /** End of iframe  **/
+
+    @media screen and (max-width: $mobile-width) {
+        width: 90vw;
+    }
+}
+/** End of video  **/
+
+/** Start of client  **/
+.client {
+    @include flexbox(center, center, 50px);
+    padding: 3rem 0rem 7rem;
+
+    /** Start of img  **/
+    img {
+        height: 30px;
+
+        @media screen and (max-width: $mobile-width) {
+            height: 25px;
+        }
+    }
+    /** End of img  **/
+    @media screen and (max-width: $mobile-width) {
+        @include flexbox(center, center, 30px);
+        flex-direction: column;
+        padding: 2rem 0rem 3rem;
+    }
+}
+/** End of client  **/
+
+/** Start of section  **/
+section {
+    padding: 5rem 3rem 1rem;
+
+    @media screen and (max-width: $mobile-width) {
+        padding: 2rem 2rem 1rem;
+    }
+}
+/** End of section  **/
+
+/** Start of container  **/
+.container {
+    @include flexbox(space-between, center, false);
+    padding: 5rem 3rem 3rem 8rem;
+
+    @media screen and (max-width: $mobile-width) {
+        flex-direction: column;
+        padding: 3rem 0rem;
+    }
+}
+/** End of container  **/
+
+/** Start of section-heading  **/
+.section-heading {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin: 1rem 0rem;
+    text-align: center;
+
+    @media screen and (max-width: $mobile-width) {
+        font-size: 1.5rem;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+/** End of section-heading  **/
+
+/** Start of flex-container  **/
+.flex-container.flex-features {
+    padding: 2.5rem 1.5rem 0rem;
+    @include flexbox(center, center, 2.5rem);
+
+    /** Start of flex-features **/
+
+    /** Start of flex-item **/
+    .flex-item {
+        border-radius: 0.6rem;
+        padding: 1.5rem 3rem 2.2rem;
+        width: 370px;
+        color: $white;
+        height: 430px;
+
+        @media screen and (max-width: $mobile-width) {
+            padding: 1.5rem 2.5rem 3rem;
+            width: 100%;
+            height: 410px;
+        }
+    }
+    /** End of flex-item **/
+
+    /** Start of feature-title **/
+    .feature-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 1.2;
+        margin: 1rem 0rem;
+        text-align: center;
+
+        @media screen and (max-width: $mobile-width) {
+            font-size: 1.7rem;
+        }
+    }
+    /** End of feature-title **/
+
+    /** Start of feature-description **/
+    .feature-description {
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 1.5;
+        padding: 1rem 0rem 0.5rem;
+        text-align: left;
+
+        @media screen and (max-width: $mobile-width) {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+    }
+    /** End of feature-description **/
+    @media screen and (max-width: $mobile-width) {
+        flex-direction: column;
+        gap: 2.5rem 0rem;
+        padding: 2.5rem 0rem 0.5rem;
+    }
+
+    /** End of flex-features **/
+}
+/** End of flex-container  **/
+
+/** Start of reels  **/
+.reels {
+    padding: 2.5rem 2rem 6rem;
+
+    /** Start of counter-value  **/
+    .counter-value {
+        font-size: 10rem;
+
+        @media screen and (max-width: $mobile-width) {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+    }
+    /** End of counter-value  **/
+
+    @media screen and (max-width: $mobile-width) {
+        padding: 1.5rem 2rem 3rem;
+    }
+}
+/** End of reels  **/
+
+/** Start of pricing  **/
+.pricing {
+    padding: 5rem 4rem 8rem;
+
+    /** Start of pricing-details  **/
+    .pricing-details {
+        width: 45vw;
+
+        @media screen and (max-width: $mobile-width) {
+            width: 100%;
+        }
+    }
+    /** Start of pricing-plan  **/
+    .pricing-plan {
+        background: $secondary;
+        padding: 1rem 6rem 2rem;
+        width: 390px;
+        @include flexbox(center, center, false);
+        flex-direction: column;
+        color: $white;
+        text-align: center;
+        border-radius: 0.5rem;
+
+        @media screen and (max-width: $mobile-width) {
+            margin-top: 2rem;
+            padding: 3rem 6rem 2rem;
+            width: 100%;
+        }
+    }
+    /** End of pricing-plan  **/
+
+    /** Start of pricing-value  **/
+    .pricing-value {
+        font-size: 9rem;
+        font-weight: 700;
+
+        @media screen and (max-width: $mobile-width) {
+            font-size: 7rem;
+        }
+    }
+    /** Start of pricing-value  **/
+    .pricing-type {
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    /** End of pricing-value  **/
+
+    @media screen and (max-width: $mobile-width) {
+        padding: 3.5rem 2rem 7rem;
+    }
+}
+/** End of pricing  **/
+/** Start of arrow  **/
+.arrows {
+    display: inline-flex;
+    gap: 20px;
+    margin-left: 10px;
+
+    /** Start of arrow-right  **/
+    .arrow-right {
+        width: 14px;
+        height: 28px;
+        position: relative;
+        bottom: 10px;
+        background-color: $secondary;
+
+        @media screen and (max-width: $mobile-width) {
+            width: 7.5px;
+            height: 15px;
+            position: relative;
+            bottom: 10px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            border-top: 14px solid transparent;
+            border-bottom: 14px solid transparent;
+            border-left: 14px solid $secondary;
+            right: 0;
+            transform: translateX(100%);
+
+            @media screen and (max-width: $mobile-width) {
+                border-top: 7.5px solid transparent;
+                border-bottom: 7.5px solid transparent;
+                border-left: 7.5px solid $secondary;
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            border-top: 14px solid transparent;
+            border-bottom: 14px solid transparent;
+            border-left: 14px solid $dark;
+            left: 0;
+
+            @media screen and (max-width: $mobile-width) {
+                border-top: 7.5px solid transparent;
+                border-bottom: 7.5px solid transparent;
+                border-left: 7.5px solid $dark;
+            }
+        }
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        gap: 10px;
+        margin-left: 0px;
+    }
+}
+
+/** Start of fixed-video-btn  **/
+.fixed-video-btn {
+    background-color: $secondary;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 100%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    font-size: 1.35rem;
+}
+/** End of fixed-video-btn  **/

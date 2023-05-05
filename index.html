@@ -1,12 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videoate scss</title>
-</head>
-<body>
+   <head>
+
+        <!--Start of meta tags-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kalai" />
+        <meta name="description" content="Videoate Website" />
+        <meta name="keywords" content="reels,vidoes" />
+        <!--End of meta tags-->
+
+        <title>Videoate</title>
+
+        <!--Start of fav icon-->
+        <link rel="icon" href="/src/assets/images/Web/tab-icon.png" />
+        <!--End of fav icon-->
+
+        <!--Start of Styles Files-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="src/scss/styles.css" />
+        <!--End of Styles Files-->
+
+   </head>
+
+   <body>
     
-</body>
+        <!--Start of Wrapper-->
+        <div class="wrapper">
+
+            <!--Start of header-->
+            <header class="bg-white">
+
+                <!--Start of Logo-->
+                <div class="logo"><a href="#" class="text-dark">videoate.</a></div>
+                <!--End of Logo-->
+
+                <!-- Start of navigation-->
+                <nav>
+                    <ul>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                        <li><a href="https://www.vivo.com/in" target="_blank">Vivo</a></li>
+                        <li><a href="https://vimeo.com/" target="_blank">Vimeo</a></li>
+                        <li><a href="https://www.dailymotion.com/" target="_blank">DailyMotion</a></li>
+                    </ul>
+
+                    <!--Start of login button-->
+                    <button class="btn btn-secondary btn-sm ml-5">Login</button>
+                    <!--End of login button-->
+
+                </nav>
+                <!--End of navigation-->
+
+            </header>
+            <!--End of header-->
+
+            <!--Start of hero text-->
+            <section class="hero-text">
+
+                <h1 class="text-white text-lg">Create Beautiful Reels from Scratch</h1>
+
+                <p class="sub-text text-white">
+                Build customized videos and reels with a presenter in minutes without
+                using a camera, studio and a green screen.
+                </p>
+               
+                <button class="btn btn-lg btn-secondary text-white">Get Started</button>
+
+            </section>
+            <!--End of hero text-->
+
+            <!--Start of youtube section-->
+            <div class="youtube" id="youtube">
+
+                <p class="medium-text text-center text-white">
+                Generate reels and videos at scale, hassle free
+                </p>
+
+                <!--Start of youtube video-->
+                <div class="video text-center">
+                    
+                    <iframe
+                        src="https://www.youtube.com/embed/YHusujC8MOw?controls=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        >
+                        </iframe>
+
+                </div>
+                <!--End of youtube video-->
+
+            </div>
+            <!--End of youtube section-->
+
+            <!--Start of about-->
+            <div class="about">
+                
+                <p class="medium-text text-center text-white">Trusted by 2000+ companies around the globe</p>
+
+                <!--Start of clients-->
+                <div class="client text-center">
+                    <!--Start of client img-->
+                    <img
+                        src="/src/assets/images/company-logos/beechcraft-logo.svg"
+                        alt="beechraft"
+                        />
+                    <img
+                        src="/src/assets/images/company-logos/puma-logo.svg"
+                        alt="puma-logo"
+                        />
+                    <img
+                        src="/src/assets/images/company-logos/sony-logo.svg"
+                        alt="sony-logo"
+                        />
+                    <img
+                        src="/src/assets/images/company-logos/champion-logo.svg"
+                        alt="champion-logo"
+                        />
+                    <!--End of client img-->
+                </div>
+                <!--End of clients-->
+            </div>
+            <!--End of about-->
+
+            <!--End of hero section-->
+
+            <!--Start of features-->
+            <section class="features bg-light">
+
+                <h3 class="section-heading">What makes us different?</h3>
+
+                <!--Start of features-flex-->
+                <div class="flex-container flex-features">
+
+                    <!--Start of flex-item-->
+                    <div class="flex-item bg-green">
+                       
+                        <h2 class="feature-title">Voice Cloning</h2>
+                       
+                        <p class="feature-description">
+                            Clone on your own voice and use it to turn all your ideas into
+                            reality. Just type a speech text and the Avatar will narrate it
+                            with your voice.
+                        </p>
+
+                    </div>
+                    <!--End of flex-item-->
+
+                    <!--Start of flex-item-->
+                    <div class="flex-item bg-secondary">
+                       
+                        <h2 class="feature-title">Automated Translations</h2>
+                       
+                        <p class="feature-description">
+                            One-click video translation will help you reach a global audience.
+                            Translate your vidoes in available 75 languages anytime.
+                        </p>
+                      
+                    </div>
+                    <!--End of flex-item-->
+
+                    <!--Start of flex-item-->
+                    <div class="flex-item bg-crimson">
+                       
+                        <h2 class="feature-title">Personalize Contents</h2>
+                     
+                        <p class="feature-description">
+                            Create a personalized experience at scale that allows to deliver a
+                            more targetted message and build stronger relationships with their
+                            customers.
+                        </p>
+                      
+                    </div>
+                    <!--End of flex-item-->
+
+                </div>
+                <!--End of features-flex-->
+
+            </section>
+            <!--End of features-->
+
+            <!--Start of reels-->
+            <section class="reels bg-light text-center">
+
+                <h3 class="section-heading">Start Making Reels</h3>
+
+                <p class="sub-text">
+                Create videos at scale faster. Made for teams of all sizes.
+                </p>
+           
+                <!--Start of reels counter-->
+                <div class="counter-value">5,023,233,244</div>
+                <h3 class="section-text large-text">Reels Created & Counting...</h3>
+                <!--End of reels counter-->
+            
+            </section>
+            <!--End of reels-->
+
+            <!--Start of pricing-->
+            <section class="pricing bg-primary" id="pricing">
+
+                
+                <h3 class="section-heading text-white">Our Pricing. Just for You</h3>
+
+                <!--Start of container-->
+                <div class="container">
+
+                    <!--Start of pricing details-->
+                    <div class="pricing-details">
+
+                        <h1 class="text-lg text-white">
+                            Built of business growth at
+                            <span class="text-secondary">Professional</span> 
+                            level
+                            <span class="arrows">
+                                <span class="arrow-right"></span>
+                                <span class="arrow-right"></span>
+                                <span class="arrow-right"></span>
+                            </span>
+                        </h1>
+                    
+                    </div>
+                    <!--End of pricing details-->
+
+                    <!--Start of pricing plan-->
+                    <div class="pricing-plan">
+                        <div class="pricing-value">$25</div>
+                        <div class="pricing-type text-uppercase">Yearly Subscription</div>
+                    </div>
+                    <!--End of pricing plan-->
+
+                </div>
+                <!--End of container-->
+
+                <!--Start of cta button-->
+                <div class="cta text-center">
+                    <button class="btn btn-lg btn-secondary text-white">
+                    Contact Us
+                    </button>
+                </div>
+                <!--End of cta button-->
+
+            </section>
+            <!--End of pricing-->
+
+            <!--Start of fixed-video-btn-->
+                <button class="fixed-video-btn">
+                    <i class="fa fa-video-camera text-white" aria-hidden="true"></i>
+                </button>
+            <!--End of fixed-video-btn -->
+
+        </div>
+        <!--End of Wrapper-->
+  
+   </body>
 </html>

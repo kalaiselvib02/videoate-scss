@@ -1,0 +1,21 @@
+/** Start of mixin flexbox **/
+@mixin flexbox($justify, $align, $gap) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    @if $align {
+        align-items: $align;
+    }
+
+    @if $gap {
+        gap: $gap;
+    }
+
+    @if $justify {
+        justify-content: $justify;
+    }
+}
+/** End of mixin flexbox **/
